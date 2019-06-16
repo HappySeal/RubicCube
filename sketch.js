@@ -7,7 +7,6 @@ function setup() {
 }
 function draw() {
     background(255);
-
     stroke(0);
     rotateY(map(lastPos.x, 0, width, 0, TWO_PI));
     rotateX(map(lastPos.y, 0, height, 0, TWO_PI));
@@ -19,32 +18,32 @@ function draw() {
     c.show();
 }
 function keyPressed() {
-    if (keyCode == 74) {
+    if (keyCode == 71) {
         c.rY(1, -1);
     }
-    if (keyCode == 75) {
+    if (keyCode == 72) {
         c.rY(0, -1);
     }
-    if (keyCode == 76) {
+    if (keyCode == 74) {
         c.rY(-1, -1);
     }
-    if (keyCode == 85) {
+    if (keyCode == 84) {
         c.rX(1, -1);
     }
-    if (keyCode == 73) {
+    if (keyCode == 89) {
         c.rX(0, -1);
     }
-    if (keyCode == 79) {
+    if (keyCode == 85) {
         c.rX(-1, -1);
     }
 
-    if (keyCode == 77) {
+    if (keyCode == 66) {
         c.rZ(1, -1);
     }
-    if (keyCode == 191) {
+    if (keyCode == 78) {
         c.rZ(0, -1);
     }
-    if (keyCode == 220) {
+    if (keyCode == 77) {
         c.rZ(-1, -1);
     }
 }
